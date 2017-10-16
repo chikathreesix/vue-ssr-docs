@@ -128,7 +128,7 @@ const renderer = createBundleRenderer(serverBundle, { ... })
 - #### `runInNewContext`
 
     - 2.3.0+
-    - only used in `createBundleRenderer`
+    - `createBundleRenderer` のみで使用される
     - 期待`boolean | 'once'` ： `boolean | 'once'` （2.3.1以降でのみサポートされている`'once'` ）
 
     デフォルトでは、BundleRenderer の描画ごとに未使用の V8 コンテキストを生成し、バンドル全体を再実行するでしょう。これにはいくつかのメリットがあります。例えば、私たちが以前から言及してきた「ステートフルでシングルトン」なデータを管理することの問題点について心配する必要がありません。しかしながら、このモードはいくつかの無視できないパフォーマンスの問題が起こります。 なぜなら、アプリケーションが大きくなるとき、バンドルの再実行は著しくコストがかかるためです。
@@ -149,7 +149,7 @@ const renderer = createBundleRenderer(serverBundle, { ... })
 - #### `basedir`
 
     - 2.2.0+
-    - only used in `createBundleRenderer`
+    - `createBundleRenderer` のみで利用される
 
     `node_modules` の依存関係を解決するために、サーババンドルのためのルートディレクトリを明示的に宣言します。 ここでは、インストール済み外部 npm 依存関係とは異なる場所に置かれた生成済みバンドルファイル、または、あなたの現在のプロジェクト内へ npm link された `vue-server-renderer` のみが必要です。
 
