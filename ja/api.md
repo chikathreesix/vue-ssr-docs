@@ -87,7 +87,7 @@ const renderer = createBundleRenderer(serverBundle, { ... })
 
 - #### `inject`
 
-    - - 2.3.0以上
+    - 2.3.0以上
 
     `template` 使用時に、自動挿入を行うかどうかを制御します。デフォルトは `true` です。
 
@@ -95,7 +95,7 @@ const renderer = createBundleRenderer(serverBundle, { ... })
 
 - #### `shouldPreload`
 
-    - - 2.3.0以上
+    - 2.3.0以上
 
     どのファイルが `<link rel="preload">` 生成済みのリソースヒント持つべきか制御するための関数を指定します。
 
@@ -232,4 +232,4 @@ const plugin = new VueSSRServerPlugin({
 })
 ```
 
-より詳しい情報は、 [ビルド設定](./build-config.md) の項目を参照してください。
+より詳しい情報は、 [ビルド設定](./build-config.md) の項目を参照してくださいね。
