@@ -32,7 +32,7 @@ renderer.renderToString(app, (err, html) => {
 })
 ```
 
-## サーバと連携する
+## サーバと連携
 
 Node.js で作られたサーバで使う場合はとても簡単です。例えば [Express](https://expressjs.com/):
 
